@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block style %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static',filename='styles/home.css') }}"
+/>
+{% endblock %} {% block main %}
+<div class="title_container">
+  <h1 class="title" data-text="HELLO, I'M XIII">HELLO, I'M XIII</h1>
+</div>
+<div class="subtitle_container">
+  <h2 class="subtitle"></h2>
+</div>
+{% endblock %}

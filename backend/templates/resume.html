@@ -1,0 +1,84 @@
+{% extends 'base.html' %} {% block style %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static',filename='styles/resume.css') }}"
+/>
+{% endblock %} {% block main %}
+
+<div class="title_container">
+  <h1 class="title" data-text="RESUME">RESUME</h1>
+</div>
+
+<div class="about">
+  <div class="title">
+    <div class="title_inner">About Me</div>
+  </div>
+  <div class="about_content">
+    <div class="image">
+      <img src="{{ url_for('static',filename='images/icon.png') }}" alt="" />
+    </div>
+    <div class="about_text">
+      <div class="description">
+        <p>
+          Currently a student of Computer Science. I enjoy writing mostly small
+          coding projects like scripts, small tools or apps to boost my
+          productivity or learn new things. I'm passionate about cyber security
+          and I am slowly but surely working my way up through learning and
+          practicing to achieve my goal of working in this field.
+        </p>
+      </div>
+      <div class="info_list">
+        <div><strong>Name:</strong> Rareș Apreutesei</div>
+        <div><strong>Age:</strong> 21 Years</div>
+        <div><strong>Job:</strong> Unemployed</div>
+        <div><strong>Citizenship:</strong> Romania</div>
+        <div><strong>Residence: </strong> Cluj-Napoca</div>
+        <div><strong>E-mail:</strong> rares.apreutesei.01@gmail.com</div>
+      </div>
+      <div class="CV">
+        <button>Download CV</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ed_exp">
+  <div class="content">
+    <div class="title">
+      <div class="title_inner">Education</div>
+    </div>
+    {% for education in education_list %}
+    <div class="text">
+      <div class="period">{{education.period}}</div>
+      <div class="title">{{education.title}}</div>
+      <div class="description">{{education.description}}</div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="content">
+    <div class="title">
+      <div class="title_inner">Experience</div>
+    </div>
+    {% for experience in experience_list %}
+    <div class="text">
+      <div class="period">{{experience.period}}</div>
+      <div class="title">{{experience.title}}</div>
+      <div class="description">{{experience.description}}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="coding_skills">
+  <div class="title">
+    <div class="title_inner">Coding skills</div>
+  </div>
+  <div class="content">
+    {% for prog_lang in prog_lang_list %}
+    <div class="circle_wrap" style="--val: {{prog_lang.procentage*360/100}}deg">
+      <div class="circle"><div class="procent">{{prog_lang.procentage|string + "%"}}</div></div>
+      <div class="lang">{{prog_lang.language}}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
