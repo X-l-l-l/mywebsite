@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+      rel="stylesheet"
+    />
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="borders">
+      <div class="t"></div>
+      <div class="b"></div>
+      <div class="l"></div>
+      <div class="r"></div>
+    </div>
+    <div class="top">
+      <div class="top_menu">
+        <a href="resume"><button id="resume" class="menu_button">Resume</button></a>
+        <a href="portofolio"><button id="portofolio" class="menu_button">Portofolio</button></a>
+        <a href="contact"><button id="contact" class="contact">Contact</button></a>
+      </div>
+    </div>
+    <div class="main">
+      
+      
+    </div>
+    <div class="bot">
+      <div class="bottom_menu">
+        <a
+          href="https://github.com/X-l-l-l"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="/static/images/github.png"
+            alt="My GitHub"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/rares-apreutesei-216567234/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="/static/images/linkedin.png"
+            alt="My LinkedIn"
+        /></a>
+        <a
+          href="https://www.fiverr.com/raresapreutesei/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/static/images/fiverr.png"
+            alt="My Fiverr"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/rares082001/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/static/images/instagram.png"
+            alt="My Instagram"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

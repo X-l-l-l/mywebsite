@@ -10,6 +10,7 @@ psycopg2 = "*"
 python-dotenv = "*"
 flask-cors = "*"
 pymongo = "*"
+frozen-flask = "*"
 
 [dev-packages]
 
